@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<!--do shift + 1 to get skeleton code
-do ctrl + / to get comment-->
-<!--  -->
+<!-- Some tips to consider with emmet
+do shift + 1 to get skeleton code
+do ctrl + / to get comment
+section.assignment
+*reminder - Ctrl + shift + p -> look at emmet and do wrap abbreviation 
+ -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +14,58 @@ do ctrl + / to get comment-->
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- ol>li*10 -->
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <!--DON'T DO THIS (inefficient) nav>ul>li>a*4 -->
+    <nav>
+        <ul>
+            <li><a href=""></a><a href=""></a><a href=""></a><a href=""></a></li>
+        </ul>
+    </nav>
+
+    <!-- Do this instead... -> nav>ul>li*   Looks better now :)-->
+    <nav>
+        <ul>
+            <li><a href="#"></a></li>    <!--The # is acting as a placeholder until you can put an actual link in there-->
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
+
+    <!-- The .assign means that a class called "assign" will be implemented into this section, with the list and all -->
+    <section class="assign">
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </section>
+
+    <!-- Section#ingredients>ol>li*5>a . The # in this case creates an id.-->
+    <Section id="ingredients">
+        <ol>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ol>
+    </Section>
 </body>
+
 </html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="wrapper">
+
+</div>
+<nav>
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/challenge.html">Challenge</a></li>
+        <li><a href="/reserve.html">Recipe</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<header class="intro">
+    <h1>Reserve your Room</h1>
+    <h2>Our reservation policies</h2>
+</header>
+<section class="policies">
+    <ul>
+        <li>Check-in time after 3:00pm on</li>
+        <li>Check-out time by 11:00am or charges are incurred</li>
+        <li>Breakfast and afternoon tea/snacks included in cost</li>
+        <li>Proof of COVID-19 Vaccination required. Upload image(s) below</li>
+        <li>50% deposit required at booking</li>
+        <li>Cancellations less than 72 hours ahead of check-in forfeit 50% of deposit</li>
+    </ul>
+</section>
+
+<section class="reserve">
+    <form method="post" name="reservation" data-netlify="true">
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="first name" required>
+        </div>
+
+        <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="last name" required>
+        </div>
+   
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="johnmoe@gmail.com" required>
+        </div>
+        
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="phone number" required>
+        </div>
+
+        <div>
+            <label for="check-inDate">Check-in Date:</label>
+            <input type="date" name="check-inDate" id="check-inDate" placeholder="check-in date" required>
+        </div>
+
+        <div>
+            <label for="check-outDate">Check-out Date:</label>
+            <input type="date" name="check-outDate" id="check-outDate" placeholder="check-out date" required>
+        </div>
+
+        <div>
+            <label for="numberOfGuests">First Name:</label>
+            <input type="number" name="numberOfGuests" id="numberOfGuests" placeholder="number of guests" required>
+        </div> <!--MAke sure to figure out how to make range 1-4-->
+
+        <div>
+            <label for="roomType">Room Type:</label>
+            <select name="roomType" id="roomType" required> <!--idk if this is the correct spot for required-->
+                <option disabled hidden selected>Please select</option>
+                <option>Single</option>
+                <option>Double</option>
+                <option>Suite</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="oceanView">Ocean View:</label>
+            <label for="oceanView">Yes</label>
+            <input type="radio" name="oceanView" id="oceanView" required> <!--don't need placeholder bc its a radio button-->
+            <label for="oceanView">No</label>
+            <input type="radio" name="oceanView" id="oceanView" required> 
+        </div>
+
+        <div>
+            <label for="notes">Notes:</label>
+           <textarea name="notes" id="notes"></textarea>
+        </div>
+
+        <div>
+            <label for="vaccineProof">Vaccine Proof:</label>
+            <input type="file" name="vaccineProof" id="vaccineProof"> <!--don't need placeholder bc its a file button-->
+        </div>
+
+        <div>
+            <label for="agreeToTerms">Agree to Terms:</label>
+            <input type="checkbox" name="agreeToTerms" id="agreeToTerms"> <!--didn't need placeholder bc it's checkbox, also doesn't necessarily need to be put as required-->
+        </div> 
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="password">
+        </div> 
+
+        <div>
+            <button type="submit">Submit</button>
+        </div> 
+
+        <div>
+            <button type="reset">Reset</button>
+        </div> 
+    </form>
+
+</section>
+
+<footer>
+    <p>
+        &copy; 2023 The Shell Hotel<br>
+        Orlando, FL
+    </p>
+</footer>
+
+</body>
+</html>
