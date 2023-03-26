@@ -6,9 +6,10 @@ html {
 
 h1 {
     font-size: 3.1rem;
+    line-height: 1.3;
     text-align: center;
     text-decoration: overline underline;
-    line-height: 1.5;
+    text-transform: capitalize;
 }
 
 .personal-intro {
