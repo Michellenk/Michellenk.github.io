@@ -1,0 +1,68 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #4d9efa;
+    color: #fcfeff;
+}
+
+h1 {
+    font-size: 3.1rem;
+    text-align: center;
+    text-decoration: overline underline;
+    line-height: 1.5;
+}
+
+.personal-intro {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    text-align: center;
+    
+}
+
+/*I found the next two css tags for adjusting image sizes from the internet - 
+https://www.w3schools.com/howto/howto_css_image_center.asp#:~:text=How%20TO%20-%20Center%20Images%201%20Step%201%29,set%20to%20100%25%20%28full-width%29.%20...%203%20W3.CSS%20Tutorial*/
+.cat-photo-1 {
+    height: 20.0rem;
+}
+
+img {
+    width: auto;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+
+nav ul {
+    font-size: 1.5rem;
+    font-family: monospace;
+    line-height: 1.7;
+    padding-left: 0;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+.assignments ul{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    list-style-type: square;
+    
+}
+
+ul a:visited {
+    color: black
+}
+
+footer a:visited {
+    color: black
+}
+
+footer, p a:link{
+    color: #fcfeff;
+}
