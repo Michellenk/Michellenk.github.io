@@ -62,10 +62,11 @@ ul a:visited {
     color: black
 }
 
-footer a:visited {
-    color: black
+
+footer a:link, p a:link{
+    color: #fcfeff;
 }
 
-footer, p a:link{
-    color: #fcfeff;
+footer a:visited {
+    color: black
 }
