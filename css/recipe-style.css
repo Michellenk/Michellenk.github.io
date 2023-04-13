@@ -150,3 +150,7 @@ footer ul {
     float: left;
     width: 33%;
 }
+
+footer p {
+    clear: both;
+}
