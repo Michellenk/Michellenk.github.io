@@ -9,10 +9,11 @@ h1, h2, h3 {
 }
 
 h1 {
-    text-transform: capitalize;
+   
     font-weight: regular;
-    letter-spacing: .1rem;
     font-size: 3.5rem;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
 }
 
 h2{
@@ -33,3 +34,24 @@ footer p {
     text-decoration: none;
 }
 
+nav{
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+nav:hover{
+    text-decoration: underline;
+}
+
+nav:active{
+    color:tomato;
+}
+
+
+nav:visited {
+    color:#e7a7b8;
+    text-decoration: none;
+
+}
