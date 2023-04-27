@@ -68,8 +68,8 @@
         </div>
 
         <div>
-            <label for="numberOfGuests">First Name:</label>
-            <input type="number" name="numberOfGuests" id="numberOfGuests" placeholder="number of guests" required>
+            <label for="numberOfGuests">Number of Guests:</label>
+            <input type="number" name="numberOfGuests" id="numberOfGuests" placeholder="number of guests" min="1" max="4" required>
         </div> <!--MAke sure to figure out how to make range 1-4-->
 
         <div>
@@ -83,7 +83,7 @@
         </div>
 
         <div class="radio", class="radio label">
-            <span>Ocean View (add’l cost)</span>
+            <span>Ocean View (additional cost)</span>
             <label for="oceanView">Ocean View:</label>
             <label for="oceanView">Yes</label>
             <input type="radio" name="oceanView" id="oceanView" required> <!--don't need placeholder bc its a radio button-->
