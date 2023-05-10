@@ -66,14 +66,26 @@ h2 {
     
 }
 
-.assignments a:hover,
-.assignments a:active {
-    text-decoration: wavy white;
+.assignments a:active{
+    text-decoration: dashed;
 }
-
 ul a:visited {
     color: black
 }
+
+
+.assignments a:hover{
+    color: orange;
+    text-decoration-style: wavy;
+  
+}
+
+
+nav a:hover{
+    color: orange;
+    list-style-type: "\1F984"; /*unicorn emoji- don't understand why it's not showing up, maybe needs margins? */
+    text-decoration-style: wavy;
+}  
 
 
 footer a:link, p a:link{
