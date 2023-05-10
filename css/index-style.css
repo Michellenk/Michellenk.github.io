@@ -12,6 +12,8 @@ h1 {
     text-transform: capitalize;
 }
 
+
+
 .personal-intro {
     font-size: 1.3rem;
     line-height: 1.2;
@@ -25,6 +27,12 @@ that's the link*/
 
 .cat-photo-1 {
     height: 20.0rem;
+}
+
+h1::before,
+h1::after {
+    content: "\1F988";
+    font-size: 3.1rem;
 }
 
 img {
@@ -54,8 +62,13 @@ h2 {
 .assignments ul{
     font-size: 1.3rem;
     line-height: 1.5;
-    list-style-type: square;
+    list-style-type: "\1F98B";
     
+}
+
+.assignments a:hover,
+.assignments a:active {
+    text-decoration: wavy white;
 }
 
 ul a:visited {
@@ -70,3 +83,6 @@ footer a:link, p a:link{
 footer a:visited {
     color: black
 }
+
+/* Doesn't really show emojis except in edge and prob firefox too (I don't use firefox)
+- tested on safari, opera gx, chrome, and edge */
