@@ -5,11 +5,18 @@ html {
 }
 
 h1 {
+    background-color: antiquewhite;
     font-size: 3.1rem;
+    left: 0;
     line-height: 1.3;
+    margin: 0 auto;
+    padding: 16px;
+    position: sticky; /* i feel like the same effect would work with absolute instead of sticky but it doesn't for some reason*/
+    right: 0;
     text-align: center;
     text-decoration: overline underline;
     text-transform: capitalize;
+    top: 0;
 }
 
 
@@ -46,9 +53,11 @@ img {
 
 
 nav ul {
+    animation: flash 2s ease-in .5s;
     font-size: 1.5rem;
     font-family: monospace;
     line-height: 1.7;
+    margin-top: 3rem;
     padding-left: 0;
     text-align: center;
     text-decoration: none;
@@ -87,6 +96,19 @@ nav a:hover{
     text-decoration-style: wavy;
 }  
 
+footer { /*1 animation and position*/
+    animation: animation-for-footer 2s;
+    background-color: #fcfeff;
+    border: 4px dashed black;
+    bottom: 0;
+    color: #4d9efa;
+    float: right;
+    padding: 16px;
+    padding-left: 20px;
+    padding-right: 40px;
+    position: sticky;
+       
+}
 
 footer a:link, p a:link{
     color: #fcfeff;
@@ -94,6 +116,39 @@ footer a:link, p a:link{
 
 footer a:visited {
     color: black
+}
+
+@keyframes animation-for-footer {
+
+    0% {
+        transform: translateX(20rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Doesn't really show emojis except in edge and prob firefox too (I don't use firefox)
